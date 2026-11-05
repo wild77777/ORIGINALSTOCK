@@ -176,6 +176,32 @@
     .success-body{font-size:12px;line-height:1.9;color:#687477}
     .success-body strong{color:#1a2022}
     .success-link{border-radius:50px;display:inline-block;padding:14px 20px;background:#168d50;color:#fff;font-size:12px;font-weight:800;margin-top:10px}
+
+    /* Opciones de pago y resumen dinámico */
+    .payment-section{margin:3px 0 23px}
+    .payment-subtitle{font-size:11px;color:#6b787b;line-height:1.6;margin:-4px 0 14px}
+    .payment-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .payment-option{position:relative;display:flex;align-items:flex-start;gap:9px;min-height:117px;padding:15px 12px;border:1.5px solid #e1e6e6;background:#fff;border-radius:13px;cursor:pointer;transition:border-color .2s,background .2s,box-shadow .2s}
+    .payment-option:hover{border-color:#9aaba5}
+    .payment-option:has(input:checked){background:#effaf3;border-color:#12894b;box-shadow:0 0 0 1px #12894b20}
+    .payment-option:has(input:focus-visible){outline:3px solid #9dcfb0;outline-offset:2px}
+    .payment-option input{accent-color:#12894b;margin:3px 0 0;flex-shrink:0}
+    .payment-option .payment-text{display:flex;flex-direction:column;gap:5px;min-width:0}
+    .payment-option strong{font-size:12px;color:#17201c;line-height:1.4}
+    .payment-option small{color:#68787a;font-size:10px;line-height:1.55}
+    .payment-pill{display:inline-block;color:#078446;font-weight:800;font-size:9px;letter-spacing:.3px;margin-top:3px}
+    .payment-detail{margin-top:13px;border:1px solid #d9e8de;background:#f2faf5;border-radius:12px;padding:15px 16px}
+    .payment-detail[hidden]{display:none}
+    .payment-detail strong{display:block;color:#174e33;font-size:12px;margin-bottom:8px;line-height:1.55}
+    .payment-detail p{font-size:11px;line-height:1.75;color:#3b5848;margin:0}
+    .payment-breakdown{display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:7px 0;color:#374a42;font-size:11px;border-bottom:1px solid #dceadf}
+    .payment-breakdown:last-of-type{border-bottom:0}
+    .payment-breakdown[hidden]{display:none}
+    .payment-breakdown b{font-size:13px;color:#173d2b;white-space:nowrap}
+    .payment-breakdown.discount{color:#178447}
+    .payment-breakdown.discount b{color:#178447}
+    .payment-note{font-size:10px!important;margin-top:10px!important;color:#496457!important}
+    @media(max-width:480px){.payment-options{grid-template-columns:1fr}.payment-option{min-height:0;padding:13px 14px}.payment-section{margin-bottom:20px}}
     @media(max-width:1100px){.container{width:min(100% - 54px,1320px)}.top-nav{gap:19px}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero h1{font-size:clamp(65px,8.8vw,106px)}}
     @media(max-width:820px){.container{width:calc(100% - 36px)}.site-header{height:71px}.top-nav{display:none}.header-action{padding:12px 17px}.hero-layout{grid-template-columns:1fr 1fr;min-height:420px}.hero-copy{padding:55px 0}.hero h1{font-size:clamp(55px,8.5vw,85px)}.hero-art{min-height:380px}.hero-photo{height:280px}.hero-note{right:0;bottom:18px}.trust-item{gap:9px;padding:19px 10px}.trust-item strong{font-size:11px}.trust-item small{font-size:10px}.grid{gap:14px}.card-body{padding:14px}.modal-inner{grid-template-columns:1fr}.modal-gallery{border-radius:19px 19px 0 0}.modal-info{padding:31px}.main-img-wrap{max-height:410px}.section-desc{display:none}}
     @media(max-width:600px){.announcement{font-size:8px;letter-spacing:1px;min-height:30px}.site-header{height:65px}.logo{font-size:24px}.logo .mark{width:29px;height:29px;vertical-align:2px;font-size:10px;margin-right:6px}.header-action{font-size:11px;padding:11px 13px}.header-label{display:none}.header-action::before{content:'CATÁLOGO';font-size:10px}.hero-layout{grid-template-columns:1fr;gap:0}.hero-copy{padding:42px 0 15px}.eyebrow{font-size:9px;letter-spacing:1.7px}.hero h1{font-size:clamp(52px,12.8vw,80px);line-height:.96;margin:18px 0 17px}.hero-desc{font-size:13px;max-width:380px;margin-bottom:22px}.hero-art{height:250px;min-height:250px}.hero-photo{height:245px;max-width:85%}.hero-art::after{font-size:190px}.hero-note{bottom:8px;right:0;padding:10px 12px;min-width:140px;gap:8px}.hero-note strong{font-size:29px}.hero-note span{font-size:8px}.trust-list{grid-template-columns:1fr 1fr}.trust-item{justify-content:flex-start;border-right:0!important;padding:17px 6px}.trust-item:last-child{grid-column:1/-1;border-top:1px solid var(--line);justify-content:center}.trust-icon{width:33px;height:33px;font-size:14px}.collection{padding:51px 0 57px}.section-head{margin-bottom:22px}.section-title{font-size:48px}.toolbar-top{flex-direction:column;align-items:stretch}.search-wrap{max-width:none}.sort-select{width:100%}.filter-btns{margin-right:-18px;padding-right:18px}.filter-btn{padding:10px 16px}.stats-bar{gap:10px}.stats-bar .divider-dot{display:none}.stats-bar>div:not(:first-child){display:none}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 10px}.card-img{aspect-ratio:1/1}.badge{left:8px;top:9px;padding:6px 7px;font-size:8px}.corner-arrow{right:7px;bottom:8px;width:28px;height:28px;font-size:16px}.card-body{padding:11px 10px 13px}.card-title{font-size:11px;min-height:32px;margin:6px 0 8px}.card-vendor{font-size:8px}.card-price{font-size:17px}.card-type{display:none}.card-view{font-size:9px}.process{padding:55px 0}.steps{grid-template-columns:1fr;gap:12px}.step{padding:21px}.step-number{font-size:35px}.step h3{margin:10px 0 6px}.cta-section{padding:45px 0}.cta-panel{padding:32px 24px;align-items:flex-start;flex-direction:column}.cta-panel h2{font-size:clamp(30px,10vw,45px);overflow-wrap:anywhere}.footer-row{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap;gap:14px}.whatsapp-float{right:13px;bottom:14px;width:47px;height:47px;padding:7px;justify-content:center;font-size:0;border-radius:50%}.whatsapp-float .bubble{width:32px;height:32px;font-size:18px}.modal-overlay{padding:0}.modal{border-radius:0;min-height:100vh}.modal-gallery{padding:16px;border-radius:0}.main-img-wrap{max-height:350px}.thumb{width:53px;height:53px}.modal-info{padding:22px 18px 32px}.modal-title{font-size:36px}.form-grid{gap:10px}.fgroup label{font-size:9px}}
@@ -238,7 +264,7 @@
       <div class="container trust-list">
         <div class="trust-item"><div class="trust-icon" aria-hidden="true">✦</div><div><strong>Variedad de estilos</strong><small>Encuentra tu próximo favorito</small></div></div>
         <div class="trust-item"><div class="trust-icon" aria-hidden="true">⌂</div><div><strong>Envíos nacionales</strong><small>A todo Ecuador</small></div></div>
-        <div class="trust-item"><div class="trust-icon" aria-hidden="true">✓</div><div><strong>Pago al recibir</strong><small>Solicita la confirmación de tu pedido</small></div></div>
+        <div class="trust-item"><div class="trust-icon" aria-hidden="true">✓</div><div><strong>Dos formas de pago</strong><small>Contraentrega o 5% de descuento anticipado</small></div></div>
       </div>
     </section>
 
@@ -273,7 +299,7 @@
       </div>
     </section>
 
-    <section class="process" id="como-comprar"><div class="container"><p class="kicker">Comprar es muy sencillo</p><h2 class="section-title">TU PAR EN 3 PASOS</h2><div class="steps"><div class="step"><div class="step-number">01</div><h3>Elige tu modelo</h3><p>Explora la colección y abre el calzado que más te guste para ver todas sus fotos.</p></div><div class="step"><div class="step-number">02</div><h3>Selecciona tu talla</h3><p>Revisa las tallas mostradas para cada producto y completa los datos de entrega.</p></div><div class="step"><div class="step-number">03</div><h3>Confirma por WhatsApp</h3><p>Envía tu solicitud para coordinar la disponibilidad, el envío y el pago al recibir.</p></div></div></div></section>
+    <section class="process" id="como-comprar"><div class="container"><p class="kicker">Comprar es muy sencillo</p><h2 class="section-title">TU PAR EN 3 PASOS</h2><div class="steps"><div class="step"><div class="step-number">01</div><h3>Elige tu modelo</h3><p>Explora la colección y abre el calzado que más te guste para ver todas sus fotos.</p></div><div class="step"><div class="step-number">02</div><h3>Selecciona tu talla</h3><p>Elige la talla, decide cómo deseas pagar y completa tus datos de entrega.</p></div><div class="step"><div class="step-number">03</div><h3>Confirma por WhatsApp</h3><p>Envía tu solicitud para confirmar disponibilidad, costo de envío y forma de pago.</p></div></div></div></section>
 
     <section class="cta-section"><div class="container"><div class="cta-panel"><div><h2>¿YA ENCONTRASTE TU ESTILO?</h2><p>Haz tu consulta por WhatsApp y te ayudamos con tu próximo par.</p></div><a href="https://wa.me/593980423367?text=Hola%2C%20quiero%20consultar%20por%20el%20calzado%20de%20HOUSE%20WILD" target="_blank" rel="noopener noreferrer">HABLAR POR WHATSAPP ↗</a></div></div></section>
   </main>
@@ -285,14 +311,30 @@
     <button type="button" class="modal-close" id="modalClose" aria-label="Cerrar detalles del producto">×</button>
     <div class="modal-inner"><div class="modal-gallery"><div class="main-img-wrap"><img id="mainImg" src="" alt="Foto del producto"></div><div class="thumbs" id="thumbsRow"></div></div>
       <div class="modal-info"><div class="modal-vendor" id="mVendor"></div><div class="modal-title" id="mTitle"></div><div class="modal-type" id="mType"></div><div class="price-row"><div class="modal-price" id="mPrice"></div><div class="modal-price-cur">USD</div></div><div class="sizes-label">Selecciona tu talla</div><div class="sizes-grid" id="sizesGrid"></div><div class="size-info" id="sizeInfo">Elige una talla para continuar</div><hr class="divider">
-        <div id="orderSection"><div class="form-title">Datos para tu pedido</div><div class="form-grid">
+        <div id="orderSection">
+          <section class="payment-section" aria-labelledby="paymentTitle">
+            <div class="form-title" id="paymentTitle">¿Cómo deseas pagar?</div>
+            <p class="payment-subtitle">Escoge la forma de pago que prefieras antes de completar tu pedido.</p>
+            <div class="payment-options" role="radiogroup" aria-label="Forma de pago">
+              <label class="payment-option"><input type="radio" name="paymentMethod" value="cod"><span class="payment-text"><strong>📦 Pago contraentrega</strong><small>Abona el envío por adelantado y paga el calzado cuando lo recibas.</small><span class="payment-pill">PAGA TU CALZADO AL RECIBIR</span></span></label>
+              <label class="payment-option"><input type="radio" name="paymentMethod" value="prepaid"><span class="payment-text"><strong>💳 Pago anticipado</strong><small>Recibe un 5% de descuento en el precio de tu calzado.</small><span class="payment-pill">5% DE DESCUENTO</span></span></label>
+            </div>
+            <div class="payment-detail" id="paymentDetail" aria-live="polite" hidden>
+              <strong id="paymentMessage"></strong>
+              <div class="payment-breakdown"><span>Precio del calzado</span><b id="paymentBase">—</b></div>
+              <div class="payment-breakdown discount" id="paymentDiscountRow" hidden><span>Descuento del 5%</span><b id="paymentDiscount">—</b></div>
+              <div class="payment-breakdown"><span id="paymentDueLabel">Calzado a pagar al recibir</span><b id="paymentDue">—</b></div>
+              <p class="payment-note" id="paymentNote"></p>
+            </div>
+          </section>
+          <div class="form-title">Datos para el envío</div><div class="form-grid">
           <div class="fgroup"><label for="fNombre">Nombre</label><input type="text" id="fNombre" placeholder="Tu nombre" autocomplete="given-name"></div>
           <div class="fgroup"><label for="fApellido">Apellidos</label><input type="text" id="fApellido" placeholder="Tus apellidos" autocomplete="family-name"></div>
           <div class="fgroup"><label for="fWhatsapp">Número de WhatsApp</label><input type="tel" id="fWhatsapp" placeholder="0991234567" autocomplete="tel" inputmode="tel"></div>
           <div class="fgroup"><label for="fCedula">Cédula</label><input type="text" id="fCedula" placeholder="Número de cédula" inputmode="numeric"></div>
           <div class="fgroup"><label for="fCiudad">Ciudad</label><input type="text" id="fCiudad" placeholder="Guayaquil" autocomplete="address-level2"></div>
           <div class="fgroup full"><label for="fDireccion">Dirección completa</label><input type="text" id="fDireccion" placeholder="Calle, número, sector y referencia" autocomplete="street-address"></div>
-        </div><div class="form-error" id="formError" role="alert"></div><button type="button" class="pay-btn" id="payBtn">CONTINUAR POR WHATSAPP ↗</button><p class="pay-hint">Tu solicitud se enviará a WhatsApp para confirmar el pedido.</p></div>
+        </div><div class="form-error" id="formError" role="alert"></div><button type="button" class="pay-btn" id="payBtn">CONTINUAR POR WHATSAPP ↗</button><p class="pay-hint">El pedido y las instrucciones para pagar se confirmarán por WhatsApp. No se realiza ningún cobro en esta página.</p></div>
         <div class="order-success" id="orderSuccess"><div class="success-check">✓</div><div class="success-title">FINALIZA TU PEDIDO</div><div class="success-body" id="successMsg"></div><a class="success-link" id="successWaLink" target="_blank" rel="noopener noreferrer">ABRIR WHATSAPP ↗</a></div>
       </div>
     </div>
@@ -306,6 +348,7 @@
   let activeSort = 'default';
   let currentProduct = null;
   let selectedSize = null;
+  let selectedPayment = null;
   let lastFocusedElement = null;
   const WA_NUMBER = '593980423367'; // WhatsApp actualizado: 0980423367.
   const $ = id => document.getElementById(id);
@@ -347,9 +390,11 @@
   }
   function openModal(idx) {
     const p=PRODUCTS[idx];if(!p)return;
-    currentProduct=p;selectedSize=null;lastFocusedElement=document.activeElement;
+    currentProduct=p;selectedSize=null;selectedPayment=null;lastFocusedElement=document.activeElement;
     $('mVendor').textContent='HOUSE WILD · COLECCIÓN';$('mTitle').textContent=p.Title;$('mType').textContent=p.Type||'Calzado';$('mPrice').textContent=dollars(p.Price);
     $('sizeInfo').textContent='Elige una talla para continuar';$('formError').textContent='';
+    document.querySelectorAll('input[name="paymentMethod"]').forEach(radio=>radio.checked=false);
+    $('paymentDetail').hidden=true;
     ['fNombre','fApellido','fWhatsapp','fCedula','fCiudad','fDireccion'].forEach(id=>$(id).value='');
     $('orderSection').style.display='block';$('orderSuccess').style.display='none';
     const imgs=p.Images||[];
@@ -367,24 +412,71 @@
   function selectSize(index,btn) {
     const size=(currentProduct?.Sizes||[])[index];if(!size)return;
     selectedSize=size;document.querySelectorAll('.size-btn').forEach(b=>b.classList.remove('selected'));btn.classList.add('selected');
-    $('sizeInfo').textContent='✓ Talla seleccionada: '+size.size;$('mPrice').textContent=dollars(size.price||currentProduct.Price);$('formError').textContent='';
+    $('sizeInfo').textContent='✓ Talla seleccionada: '+size.size;$('mPrice').textContent=dollars(size.price??currentProduct.Price);$('formError').textContent='';
+    updatePaymentSummary();
   }
+  function getProductCents() {
+    // Los precios pueden variar por talla; usar siempre el valor de la talla elegida.
+    const price=Number(selectedSize?.price ?? currentProduct?.Price ?? 0);
+    return Math.round(price*100);
+  }
+  function dollarsFromCents(cents) {return '$'+(cents/100).toFixed(2);}
+  function getPaymentTotals() {
+    const base=getProductCents();
+    const discount=selectedPayment==='prepaid' ? Math.round(base*5/100) : 0;
+    return {base,discount,due:base-discount};
+  }
+  function updatePaymentSummary() {
+    const panel=$('paymentDetail');
+    if(!selectedPayment){panel.hidden=true;return;}
+    const t=getPaymentTotals();
+    panel.hidden=false;
+    $('paymentBase').textContent=dollarsFromCents(t.base);
+    $('paymentDiscountRow').hidden=selectedPayment!=='prepaid';
+    $('paymentDiscount').textContent='− '+dollarsFromCents(t.discount);
+    $('paymentDue').textContent=dollarsFromCents(t.due);
+    if(selectedPayment==='cod') {
+      $('paymentMessage').textContent='¡Perfecto! Seleccionaste pagar al recibir.';
+      $('paymentDueLabel').textContent='Calzado a pagar al recibir';
+      $('paymentNote').textContent='Solo debes pagar el costo del envío por adelantado; el calzado ('+dollarsFromCents(t.due)+') lo pagas cuando llegue. Te confirmaremos el costo del envío y cómo abonarlo por WhatsApp.';
+    } else {
+      $('paymentMessage').textContent='¡Excelente! Tu calzado tiene un 5% de descuento por pago anticipado.';
+      $('paymentDueLabel').textContent='Calzado con descuento';
+      $('paymentNote').textContent='Pagas '+dollarsFromCents(t.due)+' por el calzado. El costo del envío es adicional y se confirmará por WhatsApp, junto con las instrucciones para el pago anticipado.';
+    }
+  }
+  document.querySelectorAll('input[name="paymentMethod"]').forEach(radio=>{
+    radio.addEventListener('change',()=>{
+      if(!radio.checked)return;
+      selectedPayment=radio.value;
+      $('formError').textContent='';
+      updatePaymentSummary();
+    });
+  });
   function closeModal(){ $('modalOverlay').classList.remove('open');$('modalOverlay').setAttribute('aria-hidden','true');document.body.style.overflow='';if(lastFocusedElement?.focus)lastFocusedElement.focus(); }
   $('modalClose').addEventListener('click',closeModal);
   $('modalOverlay').addEventListener('click',e=>{if(e.target===$('modalOverlay'))closeModal()});
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('modalOverlay').classList.contains('open'))closeModal();});
   $('payBtn').addEventListener('click',()=>{
     const err=$('formError');
-    if(!selectedSize){err.textContent='Selecciona una talla antes de continuar.';return;}
+    if(!selectedSize){err.textContent='Selecciona una talla antes de continuar.';$('sizesGrid').scrollIntoView({block:'center',behavior:'smooth'});return;}
+    if(!selectedPayment){err.textContent='Selecciona cómo deseas pagar: contraentrega o pago anticipado.';document.querySelector('input[name="paymentMethod"]').focus();return;}
     const fields=[['fNombre','Nombre'],['fApellido','Apellidos'],['fWhatsapp','Número de WhatsApp'],['fCedula','Cédula'],['fCiudad','Ciudad'],['fDireccion','Dirección']];
     for(const [id,label] of fields){if(!$(id).value.trim()){err.textContent='Completa el campo: '+label+'.';$(id).focus();return;}}
-    const data={producto:currentProduct.Title,talla:selectedSize.size,precio:dollars(selectedSize.price||currentProduct.Price),nombre:$('fNombre').value.trim(),apellidos:$('fApellido').value.trim(),whatsapp:$('fWhatsapp').value.trim(),cedula:$('fCedula').value.trim(),ciudad:$('fCiudad').value.trim(),direccion:$('fDireccion').value.trim()};
-    const msg=`🛒 *SOLICITUD DE PEDIDO - HOUSE WILD*\n\n👟 *Producto:* ${data.producto}\n📐 *Talla:* ${data.talla}\n💵 *Precio:* ${data.precio} (Pago al recibir)\n\n👤 *Cliente:*\n• Nombre: ${data.nombre} ${data.apellidos}\n• WhatsApp: ${data.whatsapp}\n• Cédula: ${data.cedula}\n\n📦 *Envío:*\n• Ciudad: ${data.ciudad}\n• Dirección: ${data.direccion}`;
+    const t=getPaymentTotals();
+    const data={producto:currentProduct.Title,talla:selectedSize.size,precio:dollarsFromCents(t.base),descuento:dollarsFromCents(t.discount),aPagar:dollarsFromCents(t.due),nombre:$('fNombre').value.trim(),apellidos:$('fApellido').value.trim(),whatsapp:$('fWhatsapp').value.trim(),cedula:$('fCedula').value.trim(),ciudad:$('fCiudad').value.trim(),direccion:$('fDireccion').value.trim()};
+    const paymentInfo=selectedPayment==='cod'
+      ? `📦 *Forma de pago: CONTRAENTREGA*\n💵 *Calzado al recibir:* ${data.aPagar}\n🚚 *Envío:* se abona por adelantado (valor pendiente de confirmar).\n⚠️ Confirmen el costo del envío y cómo abonarlo antes de procesar el pedido.`
+      : `💳 *Forma de pago: ANTICIPADO*\n💵 *Precio del calzado:* ${data.precio}\n🎁 *Descuento 5%:* -${data.descuento}\n✅ *Calzado con descuento:* ${data.aPagar}\n🚚 *Envío:* adicional, pendiente de cotizar.\n⚠️ Envíen instrucciones de pago y confirmen el total final.`;
+    const msg=`🛒 *SOLICITUD DE PEDIDO - HOUSE WILD*\n\n👟 *Producto:* ${data.producto}\n📐 *Talla:* ${data.talla}\n\n${paymentInfo}\n\n👤 *Cliente:*\n• Nombre: ${data.nombre} ${data.apellidos}\n• WhatsApp: ${data.whatsapp}\n• Cédula: ${data.cedula}\n\n📦 *Datos para el envío:*\n• Ciudad: ${data.ciudad}\n• Dirección: ${data.direccion}\n\nQuiero confirmar mi pedido y el costo de envío.`;
     const waUrl='https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(msg);
     $('successWaLink').href=waUrl;
-    const opened=window.open(waUrl,'_blank','noopener,noreferrer');
+    window.open(waUrl,'_blank','noopener,noreferrer');
     $('orderSection').style.display='none';$('orderSuccess').style.display='flex';
-    $('successMsg').textContent=`Tu solicitud de ${data.producto}, talla ${data.talla}, por ${data.precio} está preparada. Confirma el envío del mensaje en WhatsApp para que podamos gestionar tu pedido.`;
+    $('successMsg').textContent=(selectedPayment==='cod'
+      ? `Tu solicitud de ${data.producto}, talla ${data.talla}, está lista: abonas el envío por adelantado (precio por confirmar) y ${data.aPagar} por el calzado al recibirlo.`
+      : `Tu solicitud de ${data.producto}, talla ${data.talla}, está lista con 5% de descuento: ${data.aPagar} por el calzado más el envío por confirmar.`)
+      +' Abre WhatsApp y envía el mensaje para confirmar el pedido y recibir las instrucciones de pago.';
   });
   document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');activeFilter=btn.dataset.filter;applyFilters();}));
   $('searchInput').addEventListener('input',e=>{activeSearch=e.target.value;applyFilters()});
